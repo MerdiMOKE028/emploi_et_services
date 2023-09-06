@@ -1,8 +1,8 @@
 <?php
 
     define('HOST','localhost');
-    define(DB_NAME,'emploi');
-    define('USER','root@localhost');
+    define('DB_NAME','emploi');
+    define('USER','root');
     define('PASS','password');
 
     try {

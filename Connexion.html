@@ -81,7 +81,7 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="Acceuil.html" class="nav-item nav-link">Acceuil</a>    
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                     <div class="dropdown-menu bg-light m-0">
                         <a href="Services.html" class="dropdown-item">Voyage</a>
                     </div>
@@ -89,6 +89,7 @@
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
                 <a href="temoignage.html" class="nav-item nav-link">Témoignages</a>
                 <a href="Apropos.html" class="nav-item nav-link">A propos</a>
+                <a href="Connexion.html" class="nav-item nav-link active">Connexion</a>
             </div>
         </div>
     </div>
@@ -100,50 +101,50 @@
             <h1 class="display-4 text-white animated slideInDown mb-4">...</h1>
         </div>
     </div>
-    <!--Detail de nos servies -->
+
+    <!-- Début de la connexion -->
+
             <div class="container-xxl courses my-2 py-2 pb-0">
                 <div class="container">
                     <div class="text-center mx-auto mb-2 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 400px;">
-                        <form>
-                        <p>
-                        <form class="form-horizontal" style="padding-right:20px;">
-                        <div class="form-group">
-                        <h4 class="gros_titre">Page de connexion</h4>
-                        </div> </p>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                            <input type="email" class="form-control border-0" id="user" placeholder="Mot d'utilisateur"><br>
-                            <label for="cage">Nom d'utilisateur</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                            <input type="email" class="form-control border-0" id="password" placeholder="password"><br>
-                            <label for="cage">Mot de passe</label>
-                            </div>
-                        </div>
-                        <a href="#"> Mot de passe oublié</a>
-                        </form>
-                        <div class="form-group">
-                          <span class="pull-right btn btn-primary btn-Connexion"
-                            onclick="Connexion();">
-                            Se connecter
-                          </span>
-                          <span class="pull-right btn btn-primary btn-nouveau_compte"
-                            onclick="nouveau_compte();">
-                            Créer nouveau compte
-                          </span>
-                            </div>
-                              <div class="col-lg-offset-2 col-md-offset-1"></div>
-                            </div>
-                          </div>
-                    </div>
+                        <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+                         </head>
+                            
+                    <div id="container">
+                <!-- zone de connexion -->
+ 
+                <form action="verification.php" method="POST">
+                <h2>PAGE DE CONNEXION</h2>
+                <div>
+                <label><b>Nom d'utilisateur</b></label>
+                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+                </div>
+                <div>
+                <label><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+                </div>
+                <div>
+                <input type="submit" id='submit' value='LOGIN' >
+                </div>
+                <div>
+                <input type="submit" id='submit' value='CREER COMPTE CLIENT' >
+                </div>
+                <?php
+                if(isset($_GET['erreur'])){
+                $err = $_GET['erreur'];
+                if($err==1 || $err==2)
+                echo "
+                <p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
+                }
+                ?>
+                </form>
                 </div>
             </div>
-        </div>
             
-    <!-- Fin de nos services -->
-
+        </div>
+    </div>
+            
+            <!--Fin de la connexion -->
 
   <!-- Bas de page -->
   <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">

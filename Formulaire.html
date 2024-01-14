@@ -4,7 +4,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Emploi et Services</title>
+    <title>Emploi&Services_formulaire</title>
 
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -12,7 +12,7 @@
     <meta content="" name="description">
 
 
-    <link href="img/emp.jpg" rel="icon">
+    <link href="img/logoes.jpg" rel="icon">
 
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,13 +36,12 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-right">
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
-    <!-- Spinner End -->
 
-    <!-- Topbar Start -->
+
+
     <div class="container-fluid bg-dark text-light p-0">
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
@@ -76,7 +75,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-            <h2 class="m-0"><i class="fa fa-avion text-primary me-2"></i>Emploi et service</h2>
+            <h2 class="m-0"><i class="fa fa-plane text-primary me-2"></i>Emploi et service</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -88,8 +87,8 @@
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                     <div class="dropdown-menu bg-light m-0">
                         <a href="Services.html" class="dropdown-item">Voyage</a>
-                    <!--    <a href="Gardinage.html" class="dropdown-item">Gardinage</a>
-                            <a href="Securite.html" class="dropdown-item">Sécurité</a> -->
+                        <a href="404.html" class="dropdown-item">Payer ma facture</a>
+                        <a href="Securite.html" class="dropdown-item">Sécurité</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -100,61 +99,23 @@
         </div>
     </nav>
 
-                
-<!-- Debut de la partie animation -->
-    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/Eq1.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7">
-                                    <h1 class="display-2 text-light mb-5 animated slideInDown">L'agence de proximitée</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/Eq1.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7">
-                                    <h1 class="display-2 text-light mb-5 animated slideInDown">L'agence qui assure</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-</div>
-
             <hr>
             <form style="margin:auto; width:850px; text-align:absolute;">
             <div class="bg-primary text-left p-5" position:absolute; top:850px>
-                <h1 class="mb-4"> SOUMETTRE MON DOSSIER EN LIGNE</h1 position:mx-center; top:1000px>                       
+                <h1 class="mb-0 ">  SOUMETTRE MON DOSSIER EN LIGNE </h1 position:absolute; top:1000px>                       
         <article class="col-xs-12 maincontent">      
         <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
 
                         <div class="top-margin">
-                            <label>Noms</label>
+                            <label>Nom</label>
                             <input type="text" class="form-control">
                         </div>
+
+                        <div class="top-margin">
+                            <label>Post-Nom</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        
                         <div class="top-margin">
                             <label>Prénom</label>
                             <input type="text" class="form-control">
@@ -162,17 +123,20 @@
                         
                         <div class="top-margin">
                             <label><Table></Table>Téléphone</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+
+                        <div class="top-margin">
+                            <label>Nationalité</label>
                             <input type="text" class="form-control">
                         </div>
                                    
                         <div class="top-margin">
                             Choisir votre genre
                             </div>
-                            <select name="Sexe">
-                                <option value="Sexe" selected="selected">Genre</option>
-                                <option value="Afghanistan">Féminin</option>
-                                <option value="Afrique_Centrale">Masculin</option>
-                            </select>
+                            
+                                <input type="radio" name="sexe">  Masculin
+                                <input type="radio" name="sexe">  Féminin <p>
 
                             <div class="top-margin">
                             Validité de passeport
@@ -181,8 +145,13 @@
                                 <option value="Passeport" selected="selected">Passeport</option>
                                 <option value="Afghanistan">Valide</option>
                                 <option value="Afrique_Centrale">Expiré</option>
-                                <option value="Afrique_Centrale">Pas de passeport valide</option>
+                                <option value="Afrique_Centrale">Pas de passeport</option>
                             </select>
+
+                            <div class="top-margin">
+                                <label>Numéro Passeport</label>
+                                <input type="text" class="form-control">
+                            </div>
 
                         <div class="top-margin">
                         Choisir vote pays actuel                                
@@ -217,24 +186,48 @@
                         </select>
 
                         <div class="top-margin">
-                            <label>Joindre mes documents</label>
+                            <label>Adresse</label>
                             <input type="text" class="form-control">
                         </div>
+
+                        <div class="top-margin">
+                            Type de service
+                            </div>
+                            <select name="Renseignements">
+                                <option value="Passeport" selected="selected">Visa d'étude</option>
+                                <option value="Afghanistan">Visa travail</option>
+                                <option value="Afghanistan">Visa tourisme</option>
+                                <option value="Afrique_Centrale">Visa médical</option>
+                                <option value="Afrique_Centrale">Visa de regroupement familiale</option>
+                                <option value="Afghanistan">Promotion visa Canada</option>
+                                <option value="Afghanistan">Promotion visa USA</option>
+                                <option value="Afghanistan">Promotion visa Schengen</option>
+                                <option value="Afghanistan">Promotion visa Nicaragua</option>
+                                <option value="Afghanistan">Promotion visa Brésil</option>
+                                <option value="Afghanistan">Promotion visa Turquie</option>
+                                <option value="Afghanistan">Assistance passeport</option>
+                            </select>
+
+                        <label for="avatar">Joindre mes documents:</label>
+                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg, doc/pdf" required>
+
                         <div class="top-margin">
                             <label>Email <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control">
+                            <input type="email" id="email" size="30" class="form-control" required>
                         </div>
                         <hr>
 
                         <div class="row">
                             <div class="col-lg-8">
                                 <label class="checkbox">
-                                    <input type="checkbox"> 
+                                    <input type="checkbox" 
+                                    required> 
                                     Acceprter <a href="Conditions.html">Termes et conditions</a>
                                 </label>                        
                             </div>
-                            <div class="col-lg-4 text-right">
-                                <button class="btn btn-action" type="submit">Soumettre</button>
+                            <div class="col-lg-0 text-right">
+                            <!-- Bas de page     <button class="btn btn-action" input type="submit" value="Soumettre">Soumettre</button> -->
+                                <button class="btn btn-action a href="m.osado@emploietservices.com" type="submit" value="Soumettre">Soumettre Formulaire</a></p> </button>
                             </div>
                         </div>
                     </form>
@@ -249,81 +242,75 @@
 </div>
 
 
-    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Cabinet de Consulting et de Coaching par excellence</h4>
-                    <h2 class="text-primary mb-4"><i class="fa fa-avion text-white me-0"></i>Emploi & Services</h2>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>211 Nyangwe, Lingwala, Kinshasa</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-2"></i>+ 243 819 110 509 / 898 705 265</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-2"></i>emploietservices@gmail.com</p>
+<!-- Bas de page -->
+<div class="container-fluid bg-dark text-light footer my-2 mb-0 py-2 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row g-1">
+            <div class="col-lg-6 col-md-10">
+                <h4 class="text-white mb-4">Cabinet de Consulting et de Coaching par excellence.</h4>
+                <h2 class="text-primary mb-4"><i class="fa fa-plane text-white me-0"></i> Emploi & Services</h4>
+                <p class="mb-2"><i class="fa fa-phone-alt me-2"></i>+ 243 819 110 509 / 898 705 265 / 817 112 751</p>
+                <p class="mb-2"><i class="fa fa-envelope me-2"></i>emploietservices@gmail.com</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>N* 211, Nyangwe, Réf: Staff OTOMA, Lingwala, Kinshasa</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>N* 4364, N'djili Q/ 12, Blvrd Lumumba, Réf: Kimbuta, Kinshasa</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>N* 1, Avenue kakongo, C/Matadi, Q/ Salongo, Matadi</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Commune de Lubumbashi, vers la Fec, Coins tabora, Lubumbashi</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>211 Nyangwe, Lingwala, Brazaville</p>    
+            </div>
+            <div class="col-lg-3 col-md-4">
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <h6 class="text-white mt-4 mb-3">Ecrivez-nous</h6>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square btn-outline-light me-1" href="https://www.facebook.com/profile.php?id=61550810019498&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-outline-light me-1" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-outline-light me-1" href="https://www.tiktok.com/tag/emploietservices%E2%9D%A4%EF%B8%8F%F0%9F%87%A8%F0%9F%87%A9%F0%9F%87%A8%F0%9F%87%AC%F0%9F%87%A8%F0%9F%87%BA%F0%9F%87%A7%F0%9F%87%AA%F0%9F%87%A8%F0%9F%87%A6%F0%9F%87%A8%F0%9F%87%AC%F0%9F%87%A8%F0%9F%87%B3%E2%9C%85"><i class="fab.fa-tiktok"></i></a>
+                    <a class="btn btn-square btn-outline-light me-1" href="https://wa.me/+243819110509?"><i class="fab fa-whatsapp"></i></a>
                 </div>
-                <div class="col-lg-3 col-md-5">
-                    <h4 class="text-light mb-4">...</h4>
-                <a href="contact.html" class="btn btn-link" href="">Contact</a>
-                <a href="Services.html" class="btn btn-link" href="">Autres services</a>
-                <a href="Apropos.html" class="btn btn-link" href="">A Propos</a>
-                <a class="btn btn-link" href="">Terms & Condition</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Inscription</h4>
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control p-3 border-0" placeholder="Votre adresse email">
-                            <button class="btn btn-primary">Envoyer</button>
-                        </div>
-                    </form>
-                    <h6 class="text-white mt-4 mb-3">Ecrivez-nous</h6>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light me-1" href="https://www.facebook.com/profile.php?id=61550810019498&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light me-1" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light me-1" href="https://www.tiktok.com/tag/emploietservices%E2%9D%A4%EF%B8%8F%F0%9F%87%A8%F0%9F%87%A9%F0%9F%87%A8%F0%9F%87%AC%F0%9F%87%A8%F0%9F%87%BA%F0%9F%87%A7%F0%9F%87%AA%F0%9F%87%A8%F0%9F%87%A6%F0%9F%87%A8%F0%9F%87%AC%F0%9F%87%A8%F0%9F%87%B3%E2%9C%85"><i class="fab.fa-tiktok"></i></a>
-                        <a class="btn btn-square btn-outline-light me-1" href="https://wa.me/+243819110509?"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                    <h6 class="text-white mt-4 mb-3">Nous acceptons</h6>
-                    <div class="d-flex pt-2">
-                    <img class="img-fluid" src="img/Paie0.jpg" alt="">
-                    </div>
+                <h6 class="text-white mt-4 mb-3">Nous acceptons</h6>
+                <div class="d-flex pt-2">
+                <img class="img-fluid" src="img/Paie0.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
+<!-- Footer End -->
 
-    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">Toutkin</a>, 2023
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                <br>Designed By : <a href="">Merdi MOKE</a>
-                <br>Distributed By : <a href="" target="_blank">Merdi MOKE</a></div>
+
+<!-- Début de la signature -->
+<div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a href="#"> Emploi et Service</a>, 2023
             </div>
+            <div class="col-md-6 text-center text-md-end">
+                <br>Designed By : <a href="https://wa.me/+243824490107?">Intello</a>
+                <br>Distributed By : <a href="https://wa.me/+243824490107?">Intello</a>
         </div>
     </div>
+</div>
+</div>
+<!-- Fin de la signature -->
 
 
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
+<!-- Librairie de JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-
-    <script src="js/main.js"></script>
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
 </body>
 
 </html>
